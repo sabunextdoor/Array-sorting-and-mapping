@@ -7,7 +7,8 @@
 <body>
 <p id="p1"></p>
 <p id="p2"></p>
-
+<p> Multiply every element</p>
+<p id="product_value"></p>
 <script>
 
 // array
@@ -18,6 +19,12 @@ document.getElementById("p1").innerHTML=number.sort(function(a,b){return a-b})
 
 // descending order
 document.getElementById("p2").innerHTML=number.sort(function(a,b){return b-a})
+var numbers=[28,6,19,95]
+function myFunction (num){
+return num * 10;
+}
+var newarray=numbers.map(myFunction);
+document.getElementById("product_value").innerHTML=newarray;
 </script>
 
 
