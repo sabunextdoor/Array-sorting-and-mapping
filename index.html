@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+
+<script>
+
+// array
+var number=[2,6,23,78,109,190,206,230]
+
+// ascending order
+document.getElementById("p1").innerHTML=number.sort(function(a,b){return a-b})
+
+// descending order
+document.getElementById("p2").innerHTML=number.sort(function(a,b){return b-a})
+</script>
+
+
+
+
+
+</body>
